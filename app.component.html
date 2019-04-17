@@ -1,0 +1,11 @@
+<div class="app">
+  <div class="app-content" id="content">
+    <div class="box">
+      <navbar-cmp></navbar-cmp>
+      <div style="margin: 20px; background-color:lightgrey; padding:30px" class="box" id="view">
+          <router-outlet></router-outlet>
+          <span *ngIf="showLoader" class="loading"></span>
+        </div>
+    </div>
+  </div>
+</div>
